@@ -1,0 +1,134 @@
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     background-image:url(../images/Forest-1D.jpg);
+     color: #000;
+     font-size: 14px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+#container {
+     background: #D4FF7D;
+}
+
+.box {
+     padding: 5px 0;
+}
+
+.box2 {
+     padding: 5px 0;
+}
+
+
+p {
+     padding-top: 15px;
+     width: 90%;
+}
+
+li {
+     padding-bottom: 10px;
+}
+
+h2 {
+     padding-top: 15px;
+     padding-bottom: 15px;
+}
+
+#sidebar li a {
+     display:block;
+     height:105px;
+     background-image:url(../images/menubars.png);
+     background-repeat: no-repeat;
+     text-indent: -9999px;
+}
+
+
+#pagelinks .home a{
+     width:283px;
+     background-position: -15px 0;
+}
+#pagelinks .home:hover a{
+     background-position: -15px -102px;
+}
+#pagelinks .home.active a{
+     background-position: -15px -210px;
+}
+
+#pagelinks .about a{
+     width:283px;
+     background-position: -317px 0;
+}
+
+#pagelinks .about:hover a{
+     background-position: -318px -102px;
+}
+
+#pagelinks .about.active a{
+          background-position: -317px -204px;
+}
+
+#pagelinks .media a{
+     width:283px;
+     background-position: -620px 0;
+}
+#pagelinks .media:hover a{
+          background-position: -621px -102px;
+}
+#pagelinks .media.active a{
+          background-position: -620px -210px;
+}
